@@ -1,0 +1,29 @@
+{
+  "name": "bae-angular",
+  "version": "0.1.0",
+  "description": "Angular JS Library for Bae",
+  "main": "gulpfile.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brigada-anti-emos/bae-angular.git"
+  },
+  "author": "Brigada Anti Emos <bae@keemail.me>",
+  "license": "FUCKING PRIVATE",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-ngmin": "^0.3.0",
+    "gulp-watch": "^4.3.10",
+    "jasmine-core": "^2.5.2",
+    "karma": "^1.3.0",
+    "karma-chrome-launcher": "^2.0.0",
+    "karma-jasmine": "^1.0.2",
+    "karma-phantomjs-launcher": "^1.0.2"
+  }
+}

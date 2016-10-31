@@ -1,0 +1,26 @@
+{
+  "name": "bae-angular",
+  "description": "AngularJS Library for Bae",
+  "main": "",
+  "authors": [
+    "Bae <bae@keemail.me>"
+  ],
+  "license": "FUCKING PRIVATE",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    
+  },
+  "devDependencies": {
+    "angular": "^1.5.8",
+    "angular-mocks": "^1.5.8",
+    "angular-cookies": "^1.5.8"
+  }
+}
