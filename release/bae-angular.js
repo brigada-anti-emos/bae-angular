@@ -422,7 +422,7 @@ angular
 			'scrollOffset': 60,
 			'clientId': '',
 			'clientToken': '',
-			'baseUri' => 'localhost',
+			'baseUri': 'http://localhost',
 			'releases': {
 				'release':  { 
 					'name': 'Stable', 
@@ -455,8 +455,8 @@ angular
 
 		return {
 			config: function(configs) {
-				angular.forEach(function(config) {
-					_defaults[$config[0]] = $config[1];
+				angular.forEach(function(value, key) {
+					_defaults[$key] = $value;
 				});
 			},
 			templatesDir: function() {
