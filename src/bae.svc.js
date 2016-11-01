@@ -5,6 +5,7 @@ angular
 			'scrollOffset': 60,
 			'clientId': '',
 			'clientToken': '',
+			'baseUri' => 'localhost',
 			'releases': {
 				'release':  { 
 					'name': 'Stable', 
@@ -50,7 +51,7 @@ angular
 						var deferred = $q.defer();
 						var req = {
 							method: method,
-							url: url
+							url: _defaults['baseUri'] + url
 						};
 
 						switch(method) {
