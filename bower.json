@@ -7,7 +7,7 @@
   ],
   "license": "FUCKING PRIVATE",
   "homepage": "",
-  "private": true,
+  "private": false,
   "ignore": [
     "**/.*",
     "node_modules",
