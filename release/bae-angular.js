@@ -79,7 +79,7 @@ angular
 					
 					self.loginModal = function(toName, toParams) {
 						var modalInstance = $uibModal.open({
-							templateUrl: '/templates/modal-login-protected.html',
+							templateUrl: 'templates/modal-login-protected.html',
 							controller: 'modalLoginCtrl',
 							controllerAs: 'vm',
 							resolve: {
@@ -279,7 +279,7 @@ angular
 	.directive('baeLogin', ['$baeAuth', '$rootScope', '$log', '$uibModal', '$state',
 		function($baeAuth, $rootScope, $log, $uibModal, $state) {
 			return {
-				templateUrl: '/templates/bae-login.html',
+				templateUrl: 'templates/bae-login.html',
 				controllerAs: 'vm',
 				controller: function($scope) {
 					var vm = this;
@@ -297,7 +297,7 @@ angular
 								}
 							}, function(res) {
 								var modalInstance = $uibModal.open({
-									templateUrl: '/templates/modal-default.html',
+									templateUrl: 'templates/modal-default.html',
 									controller: 'modalDefaultCtrl',
 									controllerAs: 'vm',
 									resolve: {
@@ -385,7 +385,7 @@ angular
 				link: function(scope, elem, attrs) {
 					scope.releases = $bae.getDefault('releases');
 				},
-				templateUrl: '/templates/bae-roadmap.html'
+				templateUrl: 'templates/bae-roadmap.html'
 			}
 		}])
 	.directive('baeRoadmapRelease', ['$rootScope', '$bae',
@@ -397,7 +397,7 @@ angular
 				scope: {
 					'release': '='
 				},
-				templateUrl: '/templates/bae-roadmap-release.html'
+				templateUrl: 'templates/bae-roadmap-release.html'
 			}
 		}])
 
@@ -406,7 +406,7 @@ angular
 	.directive('baeWebsiteEdit', ['$baeApi', function($baeApi){
 
 		return {
-			templateUrl: '/templates/bae-website-edit.html',
+			templateUrl: 'templates/bae-website-edit.html',
 			link: function(scope, elem, attrs) {
 				
 				scope.save = function(){

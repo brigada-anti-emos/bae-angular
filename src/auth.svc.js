@@ -44,7 +44,7 @@ angular
 					
 					self.loginModal = function(toName, toParams) {
 						var modalInstance = $uibModal.open({
-							templateUrl: '/templates/modal-login-protected.html',
+							templateUrl: 'templates/modal-login-protected.html',
 							controller: 'modalLoginCtrl',
 							controllerAs: 'vm',
 							resolve: {

@@ -3,7 +3,7 @@ angular
 	.directive('baeLogin', ['$baeAuth', '$rootScope', '$log', '$uibModal', '$state',
 		function($baeAuth, $rootScope, $log, $uibModal, $state) {
 			return {
-				templateUrl: '/templates/bae-login.html',
+				templateUrl: 'templates/bae-login.html',
 				controllerAs: 'vm',
 				controller: function($scope) {
 					var vm = this;
@@ -21,7 +21,7 @@ angular
 								}
 							}, function(res) {
 								var modalInstance = $uibModal.open({
-									templateUrl: '/templates/modal-default.html',
+									templateUrl: 'templates/modal-default.html',
 									controller: 'modalDefaultCtrl',
 									controllerAs: 'vm',
 									resolve: {

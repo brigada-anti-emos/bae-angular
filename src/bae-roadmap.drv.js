@@ -6,7 +6,7 @@ angular
 				link: function(scope, elem, attrs) {
 					scope.releases = $bae.getDefault('releases');
 				},
-				templateUrl: '/templates/bae-roadmap.html'
+				templateUrl: 'templates/bae-roadmap.html'
 			}
 		}])
 	.directive('baeRoadmapRelease', ['$rootScope', '$bae',
@@ -18,6 +18,6 @@ angular
 				scope: {
 					'release': '='
 				},
-				templateUrl: '/templates/bae-roadmap-release.html'
+				templateUrl: 'templates/bae-roadmap-release.html'
 			}
 		}])

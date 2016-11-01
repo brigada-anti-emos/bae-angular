@@ -17,6 +17,7 @@
   "license": "FUCKING PRIVATE",
   "devDependencies": {
     "gulp": "^3.9.1",
+    "gulp-angular-templatecache": "^2.0.0",
     "gulp-concat": "^2.6.0",
     "gulp-ngmin": "^0.3.0",
     "gulp-watch": "^4.3.10",
