@@ -1,5 +1,4 @@
 var gulp = require('gulp');
-var ngmin = require('gulp-ngmin');
 var watch = require('gulp-watch');
 var concat = require('gulp-concat');
 var templateCache = require('gulp-angular-templatecache');

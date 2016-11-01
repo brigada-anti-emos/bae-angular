@@ -453,22 +453,27 @@ angular
 			return 'bae-' + type + '.default';
 		}
 
+		function getUrl(url) {
+			return _defaults['baseUri'] + url;
+		}
+
 		return {
 			config: function(configs) {
-				angular.forEach(function(value, key) {
-					_defaults[$key] = $value;
+				angular.forEach(configs, function(value, key) {
+					_defaults[key] = value;
 				});
 			},
 			templatesDir: function() {
-				return '/templates';
+				return 'templates';
 			},
 			$get: ['$log', '$q', '$http',
 				function($log, $q, $http) {
 					var doHttp = function(method, url, params) {
+						var reqUrl = getUrl(url);
 						var deferred = $q.defer();
 						var req = {
 							method: method,
-							url: _defaults['baseUri'] + url
+							url: reqUrl
 						};
 
 						switch(method) {
@@ -476,14 +481,16 @@ angular
 								req.params = params;
 								break;
 							case 'POST':
+							case 'PUT':
 								req.data = params;
+								break;
 						}
 						$http(req)
 						.then(function(res) {
-							$log.debug(method + ': ' + url);
+							$log.debug(method + ': ' + reqUrl);
 							deferred.resolve(res);
 						}, function(res) {
-							$log.error(method + ': ' + url);
+							$log.error(method + ': ' + reqUrl);
 							deferred.reject(res);
 						});
 
